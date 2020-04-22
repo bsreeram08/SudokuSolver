@@ -67,6 +67,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(),"PrevSolve",Toast.LENGTH_SHORT).show();
+                Intent myIntent = new Intent(MainActivity.this,PrevSolved.class);
+                startActivity(myIntent);
             }
         });
     }

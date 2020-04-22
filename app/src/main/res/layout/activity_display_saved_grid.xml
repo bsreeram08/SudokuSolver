@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".DisplaySavedGrid">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello"
+            android:textSize="40sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/saved_date"
+            />
+        <View
+            android:layout_width="35dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:textSize="25dp"
+            android:text="World"
+            android:id="@+id/saved_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <GridView
+        android:layout_margin="25dp"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:id="@+id/SudokuGridView_Saved"
+        android:background="@drawable/sudokugrid"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main Page"
+        android:id="@+id/Savedgridmainpagebtn"
+        />
+</LinearLayout>
